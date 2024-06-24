@@ -9,7 +9,7 @@ from erpnextswiss.erpnextswiss.edi import download_pricat, download_desadv, get_
 from erpnextswiss.erpnextswiss.attach_pdf import create_folder
 from frappe.utils import cint
 from frappe.utils.file_manager import save_file
-from frappe.email.queue import bulk
+from frappe.email.bulk import send
 
 class EDIFile(Document):
     def on_submit(self):
